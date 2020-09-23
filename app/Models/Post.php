@@ -21,4 +21,9 @@ class Post extends Model
     {
         return $this->belongsToMany("\App\Models\Category");
     }
+
+    public function images()
+    {
+        return $this->morphMany("\App\Models\Image", "imageable");
+    }
 }
