@@ -1,0 +1,490 @@
+/*============================================================================
+			RESPONSIVE CSS WITH MEDIA 
+=============================================================================*/
+
+/*=============  MEDIA 1400px   =============*/
+@media(min-width:1200px) and (max-width:1400px) {
+.layout-10 .post-section .left {
+	padding-left: 20px;
+}
+.layout-10 .post-section aside {
+	padding-top: 20px;
+}
+.layout-10 .post-section article {
+	margin-bottom: 0px;
+}
+.layout-10 .post-section aside p {
+	margin-top: 0px;
+}
+.featured-para.sec-bg {
+	min-height: inherit;
+	padding-bottom: 15%;
+}
+.home-9-style .bnr-text{
+	width: 90%;
+} 
+.home-9-style .bnr-text .tittle-main{
+	letter-spacing: 0px;
+	font-size: 30px;
+}
+.left-header header nav{
+	padding-left: 0px;
+}
+}
+/*=============  MEDIA 1200px   =============*/
+@media(max-width:1200px) {
+}
+/*=============  MEDIA 1024px   =============*/
+@media(max-width:1024px) {
+.layout-10 .post-section .left {
+	padding-left: 20px;
+}
+.layout-10 .post-section aside {
+	padding-top: 20px;
+}
+.layout-10 .post-section article {
+	margin-bottom: 0px;
+}
+.layout-10 .post-section aside p {
+	margin-top: 0px;
+}
+.featured-para.sec-bg {
+	min-height: inherit;
+	padding-bottom: 15%;
+}
+}
+/*=============  MEDIA 992px - 1199px   =============*/
+@media(min-width:992px) and (max-width:1199px) {
+.blog-full .post-section li.item-mas {
+	width: 50%;
+}
+.item-info {
+	top: 25%;
+}
+.bnr-3-home ul li.col-lg-12 .bnr-text{
+	width:90%;
+}
+.bnr-3-home ul li .bnr-text{
+	width:90%;
+}
+.bnr-3-home ul li .bnr-text .tittle-main{
+	letter-spacing:0px;
+	font-size:26px;
+}
+.bnr-5-home .bnr-text{
+	width:85%;
+}
+.bnr-5-home .bnr-text .tittle-main{
+	letter-spacing:0px;
+	font-size:30px;
+}
+.layout-10 .post-section aside{
+	padding-top:30px;
+}
+.layout-10 .post-section .right{
+	padding-right:20px;
+}
+.layout-10 .post-section aside h2{
+	font-size:26px;
+}
+.layout-10 .post-section aside p{
+	margin-top:20px;
+}
+.layout-10 .post-section .left{
+	padding-left: 0px;
+	padding-right: 20px;
+}
+.featured-para{
+	min-height: inherit;
+	padding-bottom: 150px;
+}
+
+}
+/*=============  MEDIA 768px - 991px   =============*/
+@media(min-width:768px) and (max-width:991px) {
+.blog-full .post-section li.item-mas {
+	width: 50%;
+}
+.social-section li {
+	width: 33.3333%;
+}
+.flikr-list li {
+	width: 33.3333%;
+}
+.post-up-tittle {
+	padding: 0px 10px;
+	padding-top: 10px;
+}
+.feat-post .owl-nav {
+	display: none;
+}
+.pagination {
+	margin-bottom: 50px !important;
+}
+.item-info {
+	top: 20%;
+}
+
+.bnr-3-home ul li.col-lg-12 .bnr-text{
+	width:90%;
+}
+.bnr-3-home ul li .bnr-text{
+	width:90%;
+}
+.bnr-3-home ul li .bnr-text .tittle-main{
+	letter-spacing:0px;
+	font-size:26px;
+}
+.bnr-5-home .bnr-text{
+	width:100%;
+}
+.bnr-5-home .bnr-text .tittle-main{
+	letter-spacing:0px;
+	font-size:30px;
+}
+.bnr-5-home .item-info{
+	top:15%;
+}
+.featured-para{
+	min-height:inherit;
+	padding-bottom:100px;
+}
+.bnr-5-home{
+	height:400px;
+	position:relative;
+	overflow:hidden;
+}
+.bnr-5-home .owl-carousel .owl-item img{
+	width:auto;
+	max-width:none;
+}
+.bnr-5-home .owl-nav {
+  top: 55%;
+}
+.home-7-slide .bnr-text{
+	width:90%;
+	padding:20px;
+}
+.home-7-slide .item-info .tittle-main{
+	font-size:30px;
+	letter-spacing:0px;
+}
+.side-bar .add-unit{
+	margin-bottom:50px;
+}
+.layout-10 .post-section aside{
+	padding-top:30px;
+}
+.layout-10 .post-section .right{
+	padding-right:20px;
+}
+
+.layout-10 .post-section aside p{
+	margin-top:20px;
+}
+.layout-10 .post-section .left{
+	padding-left: 0px;
+	padding-right: 20px;
+}
+.featured-para{
+	min-height: inherit;
+	padding-bottom: 150px;
+}
+.navi_right{
+	right:0;
+}
+.nav_close{
+	display: none;
+}
+}
+/*=============  MEDIA 767px   =============*/
+@media(max-width:767px) {
+.item-info {
+	top: 15%;
+}
+.home-7-slide .bnr-text{
+	width:90%;
+	padding:10px 20px;
+}
+.home-7-slide .item-info .tittle-main{
+	font-size:26px;
+	letter-spacing:0px;
+}
+.featured-para{
+	min-height:inherit;
+	padding-bottom:100px;
+}
+.blog-full .post-section li.item-mas {
+	width: 100%;
+}
+.social-section li {
+	width: 50%;
+}
+.flikr-list li {
+	width: 50%;
+}
+.post-up-tittle {
+	padding-top: 25%;
+}
+.pagination {
+	margin-bottom: 50px !important;
+}
+.feat-post .owl-nav {
+	top: 40%;
+}
+.feat-post .owl-dots {
+	bottom: 17%;
+}
+footer h6 {
+	margin-top: 30px;
+}
+#container li{
+	padding:0px;
+  width: 100%;
+  display: inline-block;
+}
+.post-section{
+	width:100%;
+	display:inline-block;
+}
+.post-section ul{
+	margin:0px;
+}
+.owl-carousel.owl-loaded{
+	display:inline-block;
+}
+.bnr-3-home ul li.col-lg-12 .bnr-text{
+	width:90%;
+}
+.bnr-3-home ul li.col-lg-12 .bnr-text .tittle-main{
+	font-size:20px;
+	letter-spacing:0px;
+}
+
+.bnr-3-home ul li img {
+  	width: 150%;
+}
+.bnr-5-home .bnr-text{
+	width:100%;
+}
+.bnr-5-home .bnr-text .tittle-main{
+	letter-spacing:0px;
+	font-size:30px;
+}
+.bnr-5-home .item-info{
+	top:15%;
+}
+.bnr-5-home{
+	height:400px;
+	position:relative;
+	overflow:hidden;
+}
+.bnr-5-home .owl-carousel .owl-item img{
+	width:auto;
+	max-width:none;
+}
+.home-7-slide{
+	height:400px;
+	position:relative;
+	overflow:hidden;
+}
+.home-7-slide .bnr-text{
+	width:75%;
+}
+.home-7-slide .item-info .tittle-main{
+	letter-spacing:0px;
+}
+.home-7-slide  img{
+	max-width:none;
+	width:auto !important;
+}
+.side-bar .add-unit{
+	margin-bottom:50px;
+}
+.layout-10 .post-section aside{
+	padding-top:30px;
+}
+.layout-10 .post-section .right{
+	padding-right:20px;
+}
+.layout-10 .post-section aside h2{
+	font-size:26px;
+}
+.layout-10 .post-section aside p{
+	margin-top:20px;
+}
+.layout-10 .post-section .left{
+	padding-left: 0px;
+	padding-right: 20px;
+}
+.featured-para{
+	min-height: inherit;
+	padding-bottom: 150px;
+}
+.comments .media-list{
+	padding-left: 0px;
+}
+.comments .margin-l-80{
+	margin-left: 0px !important;
+}
+.pre-next-post ul li{
+	margin-bottom: 30px;
+}
+.single-post .qoute-of-day {
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.inner-pages .infom{
+	width: 100%;
+}
+.contact-form{
+	width: 100%;
+}
+.nav>li{
+	display: inline-block;
+	width: 100%;
+}
+.navbar-collapse.in{
+	overflow: inherit;
+}
+.navbar-toggle{
+	width: 100%;
+	display: inline-block;
+	float: none;
+	text-align: center;
+}
+header .nav>li>a{
+	width:100%;
+}
+header .dropdown-menu{
+	position:relative;
+	top:auto;
+	width:100%;
+}
+header .nav>li>a{
+	padding:10px 0px;
+}
+header .dropdown:before{
+	right:0px;
+}
+.yamm .dropdown.yamm-fullwidth .dropdown-menu{
+	width:100%;
+}
+header .nav{
+	padding: 0 15px;
+}
+header div.dropdown-menu{
+	width: 100%;
+}
+header .dropdown:before{
+	top: 21px;
+	font-size: 14px;
+}
+.navi_right{
+	right: 0;
+}
+.nav_close{
+	display: none;
+}
+.side-bar-right .item{
+	width: 50%;
+	float: left;
+		display: inline-block;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.side-bar-right .post-up-tittle{
+	padding: 30px;
+}
+.left-header header nav{
+	padding-left: 0px;
+}
+.left-header header .dropdown-menu{
+	position: relative;
+	left: 0px;
+} 
+.left-header header .navbar-toggle{
+	font-size: 20px;
+}
+}
+/*=============  MEDIA 600px   =============*/
+@media (max-width:640px) {
+.tittle-main {
+	letter-spacing: 0px;
+	margin: 0px;
+	font-size: 35px;
+}
+.bnr-text {
+	width: 90%;
+}
+.bnr-5-home .owl-nav{
+	display:none;
+}
+
+}
+/*=============  MEDIA 540px   =============*/
+@media(max-width:540px) {
+.top-bar{
+	height:auto;
+	padding-bottom:10px;
+	text-align:center;
+}
+.top-bar ul{
+	width:100%;
+	text-align:center;
+}
+.top-bar .social_icons{
+	width:100%;
+	text-align:center;
+}
+.social_icons li{
+	display:inline-block;
+	float:none;
+}
+.post-section .style-up {
+	padding-left: 0px;
+	margin-top: 0px;
+}
+.tittle-main {
+	font-size: 20px;
+}
+.btn {
+	padding: 10px 15px;
+}
+.pagination li a {
+	margin: 0px;
+}
+.post-up-tittle {
+	padding-top: 15%;
+}
+.feat-post .owl-nav {
+	top: 35%;
+}
+.feat-post .owl-dots {
+	bottom: 32%;
+}
+.bnr-3-home ul li.col-lg-12 .item-info{
+	top:12%;
+}
+.side-bar-right .item{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.side-bar-right .item img{
+	width: 100%;
+}
+.side-bar-right .post-up-tittle{
+	padding-top: 20%;
+}
+
+}
+/*=============  MEDIA 400px   =============*/
+@media(max-width:440px) {
+}
+/*=============  MEDIA 320px   =============*/
+@media(max-width:320px) {
+}
