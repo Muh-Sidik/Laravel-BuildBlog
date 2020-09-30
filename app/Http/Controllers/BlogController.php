@@ -12,7 +12,7 @@ class BlogController extends Controller
     public function __construct() {
 
         Inertia::setRootView('blog');
-        
+
     }
 
     public function index()

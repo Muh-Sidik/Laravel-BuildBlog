@@ -1,6 +1,5 @@
 <template>
     <div>
-        <div>
             <!-- TOP BAR ===========================================-->
             <div class="top-bar">
                 <div class="container">
@@ -241,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-            <!--======= / SIDE BAR END =========-->
+                <!--======= / SIDE BAR END =========-->
 
                         <!--======= POST SECTION =========-->
                         <div class="col-md-8">
@@ -252,54 +251,16 @@
 
                                     <!--======= BLOG POST =========-->
                                     <li class="col-sm-12">
-                                        <article>
-                                        <div class="img-post"> <img class="img-responsive" src="images/img-8-2.jpg" alt="" > </div>
-                                        <div class="style-up">
 
-                                            <!-- Content -->
-                                            <aside> <span class="post-tags"><a href="#.">Travel</a> <span class="like"> 5<i class="fa fa-heart-o"></i></span> </span>
-                                            <!-- Tittle -->
-                                            <h2><a href="#.">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</a></h2>
-                                            <span class="post-tags">by John Doe, March 06, 2015</span>
+                                                <!-- Page Content -->
+                                                <main>
+                                                    <slot></slot>
+                                                </main>
 
-                                            <!-- details -->
-                                            <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.<br>
-                                                <br>
-                                                Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est. </p>
+                                                <!-- Modal Portal -->
+                                                <portal-target name="modal" multiple>
+                                                </portal-target>
 
-                                            <!--======= POST IN IMAGES =========-->
-                                            <div class="post-in">
-                                                <ul class="row">
-
-                                                <!--======= IMAGE 1 =========-->
-                                                <li class="col-sm-6"> <img class="img-responsive none-scals" src="images/img-8-2-1.jpg" alt="" > </li>
-                                                <!--======= IMAGE 3 =========-->
-                                                <li class="col-sm-6">
-                                                    <h5>Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. </h5>
-                                                    <p>Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.<br>
-                                                    <br>
-                                                    Suspendisse mauris. Fusce accumsan mollis eros.
-                                                    Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. </p>
-                                                </li>
-                                                </ul>
-                                            </div>
-
-                                            <!--======= SOCIAL SHARES ICONS =========-->
-                                            <div class="share-social"> <i class="fa fa-share-alt"></i>
-                                                <!--======= SOCIAL ICONS =========-->
-                                                <ul class="social_icons">
-                                                <li class="facebook"><a href="#."><i class="fa fa-facebook"></i> </a></li>
-                                                <li class="twitter"><a href="#."><i class="fa fa-twitter"></i> </a></li>
-                                                <li class="dribbble"><a href="#."><i class="fa fa-dribbble"></i> </a></li>
-                                                <li class="pinterest"><a href="#."><i class="fa fa-pinterest"></i> </a></li>
-                                                <li class="linkedin"><a href="#."><i class="fa fa-linkedin"></i> </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- Button -->
-                                            <a href="#." class="btn">Continue reading…</a> <a href="#." class="comm">4 Comments</a> </aside>
-                                        </div>
-                                        </article>
                                     </li>
 
                                 </ul>
@@ -307,24 +268,66 @@
                                     <!--======= BLOG POST =========-->
 
                             <!--======= PAGINATION =========-->
-                            <nav>
-                            <ul class="pagination">
-                                <li><a href="#">prev</a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">NEXT</a></li>
-                            </ul>
-                            </nav>
-                        </div>
+                            </div>
                         </div>
                         <!--======= POST SECTION END =========-->
 
                     </div>
                 </div>
             </div>
-        </div>
+
+        <footer>
+                <div class="container">
+                    <ul class="row">
+
+                        <!--======= ABOUT =========-->
+                        <li class="col-sm-6">
+                            <div class="about-small">
+                                <h6>About</h6>
+                                <hr>
+                                <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. <br>
+                                <br>
+                                Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. </p>
+                                <img src="images/logo-yellow.png" alt="" >
+                            </div>
+                        </li>
+
+                        <!--======= NEWSLETTER =========-->
+                        <li class="col-sm-6">
+                        <h6>Newsletter</h6>
+                        <hr>
+                        <div class="newsletter">
+                            <p>Get an email of every new post! We'll never share your address.</p>
+                            <form>
+                            <input type="email" placeholder="your email here ..." required >
+                            <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                        <!--======= TAGS =========-->
+                        <div class="tags">
+                            <h6>Tags</h6>
+                            <hr>
+                            <ul>
+                            <li><a href="#.">fashion</a></li>
+                            <li><a href="#.">food</a></li>
+                            <li><a href="#.">design</a></li>
+                            <li><a href="#.">art</a></li>
+                            <li><a href="#.">lifestyle</a></li>
+                            <li><a href="#.">travel</a></li>
+                            <li><a href="#.">shop</a></li>
+                            <li><a href="#.">instagram</a></li>
+                            <li><a href="#.">gallery</a></li>
+                            <li><a href="#.">life</a></li>
+                            <li><a href="#.">city</a></li>
+                            <li><a href="#.">coffee</a></li>
+                            <li><a href="#.">photography</a></li>
+                            <li><a href="#.">music</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+        </footer>
     </div>
 </template>
