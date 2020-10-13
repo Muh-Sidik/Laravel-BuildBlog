@@ -8,12 +8,12 @@
                 <aside> <span class="post-tags">
                     <template v-for="(category, index) in post.categories">
                         <template v-if="index > 0">, </template>
-                        <inertia-link :href="`/blog/category/${category.slug}`" :key="category.slug">{{ category.name_category }}</inertia-link>
+                        <inertia-link :href="`/category/${category.slug}`" :key="category.slug">{{ category.name_category }}</inertia-link>
                     </template>
                     <span class="like"> 5<i class="fa fa-heart-o"></i></span>
                     </span>
                     <!-- Tittle -->
-                    <h2><inertia-link :href="`/blog/${post.slug}`">{{ post.title }}</inertia-link></h2>
+                    <h2><inertia-link :href="`/${post.slug}`">{{ post.title }}</inertia-link></h2>
                     <span class="post-tags">by {{ post.user.name }}, {{ post.published_at }}</span>
 
                     <!-- details -->
@@ -49,7 +49,7 @@
                     </div>
 
                     <!-- Button -->
-                    <inertia-link :href="`/blog/${post.slug}`" class="btn">Continue reading…</inertia-link> <a href="#." class="comm">4 Comments</a> </aside>
+                    <inertia-link :href="`/${post.slug}`" class="btn">Continue reading…</inertia-link> <a href="#." class="comm">4 Comments</a> </aside>
                 </div>
         </article>
     </blog-layout>
