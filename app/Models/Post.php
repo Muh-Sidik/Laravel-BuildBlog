@@ -26,6 +26,10 @@ class Post extends Model
         self::INACTIVE => 'inactive',
     ];
 
+    public $casts = [
+        'published_at' => 'datetime:d, M Y H:i'
+    ];
+
     public function user()
     {
         return $this->belongsTo("\App\Models\User");
@@ -51,5 +55,25 @@ class Post extends Model
         return $query->where('status', self::ACTIVE)
                     ->where('post_type', self::POST)
                     ->where('published_at', '<=', Carbon::now());
+    }
+
+    public function getNextPostAttribute()
+    {
+        $nextPost = self::activePost()
+                    ->where('id', '>', $this->id)
+                    ->orderBy('id', 'asc')
+                    ->first();
+
+        return $nextPost;
+    }
+
+    public function getPreviousPostAttribute()
+    {
+        $previousPost = self::activePost()
+                    ->where('id', '<', $this->id)
+                    ->orderBy('id', 'desc')
+                    ->first();
+
+        return $previousPost;
     }
 }

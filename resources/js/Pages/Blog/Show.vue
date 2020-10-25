@@ -70,14 +70,14 @@
                                         <li class="col-sm-6">
                                         <div class="row">
                                             <div class="col-xs-2"> <i class="fa fa-angle-left"></i> </div>
-                                            <div class="col-xs-10"> <span>Previous Post</span> <a href="#.">Suspendisse ac urna. Etiam pellentesque mauris ut lectus. </a> </div>
+                                            <div class="col-xs-10"> <span>Previous Post</span> <inertia-link v-if="prevPost" :href="`/${prevPost.slug}`">{{ prevPost.title }}</inertia-link> </div>
                                         </div>
                                         </li>
 
                                         <!--=======  NEXT POST =========-->
                                         <li class="col-sm-6">
                                         <div class="row">
-                                            <div class="col-xs-10"> <span>Next Post</span> <a href="#.">Suspendisse ac urna. Etiam pellentesque mauris ut lectus. </a> </div>
+                                            <div class="col-xs-10"> <span>Next Post</span> <inertia-link v-if="nextPost" :href="`/${nextPost.slug}`">{{ nextPost.title }}</inertia-link> </div>
                                             <div class="col-xs-2"> <i class="fa fa-angle-right"></i> </div>
                                         </div>
                                         </li>
@@ -97,7 +97,7 @@
     import BlogLayout from './../../Layouts/BlogLayout'
 
     export default {
-        props: ['post'],
+        props: ['post', 'nextPost', 'prevPost'],
         components: {
             BlogLayout,
         },

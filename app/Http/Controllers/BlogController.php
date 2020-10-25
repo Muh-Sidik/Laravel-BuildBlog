@@ -29,13 +29,19 @@ class BlogController extends Controller
 
     public function show($slug)
     {
-        $post = Post::with("user:id,name")
+        $post = Post::activePost()
+                ->with("user:id,name")
                 ->with("categories:name_category,slug")
                 ->where('slug', $slug)
                 ->firstOrFail();
 
-        return Inertia::render("Blog/Show", ['post' => $post])->withViewData(["title" => $post->title]);
+        return Inertia::render("Blog/Show", [
+            'post' => $post,
+            'nextPost' => $post->next_post,
+            'prevPost' => $post->previous_post
+        ])
+        ->withViewData(["title" => $post->title]);
     }
 
-    
+
 }

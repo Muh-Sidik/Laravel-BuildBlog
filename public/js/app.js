@@ -3587,7 +3587,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['post'],
+  props: ['post', 'nextPost', 'prevPost'],
   components: {
     BlogLayout: _Layouts_BlogLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
@@ -27912,29 +27912,43 @@ var render = function() {
                           _c("i", { staticClass: "fa fa-angle-left" })
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "col-xs-10" }, [
-                          _c("span", [_vm._v("Previous Post")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#." } }, [
-                            _vm._v(
-                              "Suspendisse ac urna. Etiam pellentesque mauris ut lectus. "
-                            )
-                          ])
-                        ])
+                        _c(
+                          "div",
+                          { staticClass: "col-xs-10" },
+                          [
+                            _c("span", [_vm._v("Previous Post")]),
+                            _vm._v(" "),
+                            _vm.prevPost
+                              ? _c(
+                                  "inertia-link",
+                                  { attrs: { href: "/" + _vm.prevPost.slug } },
+                                  [_vm._v(_vm._s(_vm.prevPost.title))]
+                                )
+                              : _vm._e()
+                          ],
+                          1
+                        )
                       ])
                     ]),
                     _vm._v(" "),
                     _c("li", { staticClass: "col-sm-6" }, [
                       _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-xs-10" }, [
-                          _c("span", [_vm._v("Next Post")]),
-                          _vm._v(" "),
-                          _c("a", { attrs: { href: "#." } }, [
-                            _vm._v(
-                              "Suspendisse ac urna. Etiam pellentesque mauris ut lectus. "
-                            )
-                          ])
-                        ]),
+                        _c(
+                          "div",
+                          { staticClass: "col-xs-10" },
+                          [
+                            _c("span", [_vm._v("Next Post")]),
+                            _vm._v(" "),
+                            _vm.nextPost
+                              ? _c(
+                                  "inertia-link",
+                                  { attrs: { href: "/" + _vm.nextPost.slug } },
+                                  [_vm._v(_vm._s(_vm.nextPost.title))]
+                                )
+                              : _vm._e()
+                          ],
+                          1
+                        ),
                         _vm._v(" "),
                         _c("div", { staticClass: "col-xs-2" }, [
                           _c("i", { staticClass: "fa fa-angle-right" })
